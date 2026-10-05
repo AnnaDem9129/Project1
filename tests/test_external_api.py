@@ -1,5 +1,7 @@
 from unittest.mock import Mock, patch
+
 import requests
+
 from src.external_api import convert_to_rub
 
 
