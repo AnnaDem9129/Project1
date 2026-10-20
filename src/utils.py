@@ -35,7 +35,6 @@ def get_financial_data(path: str) -> list[dict[str, Any]]:
                 return data
             logger.warning("Содержимое файла не является списком")
             return []
-    except (FileNotFoundError, json.JSONDecodeError):
     except (FileNotFoundError, json.JSONDecodeError) as e:
         logger.error(f"Ошибка при чтении файла {path}: {e}")
         return []
